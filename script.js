@@ -20,4 +20,9 @@ form.addEventListener((e) => {
     isValid = false;
     messages.push("Please include '@' and '.' in your email");
   }
+
+  if (password.length < 8) {
+    isValid = false;
+    messages.push("Password should be 8 or more characters long");
+  }
 });
