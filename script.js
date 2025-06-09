@@ -15,4 +15,9 @@ form.addEventListener((e) => {
     isValid = false;
     messages.push("Please enter a username that's 3 or more characters long");
   }
+
+  if (!email.includes("@") || !email.includes(".")) {
+    isValid = false;
+    messages.push("Please include '@' and '.' in your email");
+  }
 });
