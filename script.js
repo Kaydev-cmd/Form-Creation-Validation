@@ -25,4 +25,11 @@ form.addEventListener((e) => {
     isValid = false;
     messages.push("Password should be 8 or more characters long");
   }
+
+  feedbackDiv.style.display = "block";
+
+  if (isValid) {
+    feedbackDiv.textContent = "Registration successful!";
+    feedbackDiv.style.color = "#28a745";
+  }
 });
