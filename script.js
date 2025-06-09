@@ -10,4 +10,9 @@ form.addEventListener((e) => {
 
   let isValid = true;
   const messages = [];
+
+  if (username.length < 3) {
+    isValid = false;
+    messages.push("Please enter a username that's 3 or more characters long");
+  }
 });
